@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComparePackages</title>
+    <Link rel="Stylesheet" href="ComparePackages.css">
+</head>
+<body>
+    <div id="Pricing-Section">
+      <nav>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40"
+                viewBox="0 -960 960 960"
+                width="34"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                /></svg></a>
+          </li>
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="ComparePackages.html">Packages</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+        <ul>
+          <li><a>Logo</a></li>
+          <li class="hideOnMobile"><a href="Index.html">Home</a></li>
+          <li class="hideOnMobile">
+            <a href="ComparePackages.html">Packages</a>
+          </li>
+          <li class="hideOnMobile"><a href="ContactUs.html">Contact Us</a></li>
+          <li class="hideOnMobile"><a href="AboutUs.html">About Us</a></li>
+          <li class="menu-button"onclick="showSidebar()">
+            <a
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40"
+                viewBox="0 -960 960 960"
+                width="34"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+          </li>
+        </ul>
+      </nav>
+
+          <div class="Pricing-Header">
+            <div class="pricingheadercontainer">
+              <h1 id="pricingheader">Our Pricing Packages</h1>
+              <h3 id="pricingsubheader">
+                Discover Celestial Value: Our Cosmic Auto Detailing Pricing –
+                Unmatched Quality, Unbeatable Rates!
+              </h3>
+            </div>
+          </div>
+          <section class="Image-Cards-Wrapper">
+            <div class="Image-Card1">
+              <img src="Images/Image-Card12.jpg" />
+              <div class="Card-Content">
+                <h2>Sedans</h2>
+                <p class="Card-description">
+                  Utilize our extensive auto detailing services to revitalize the
+                  appeal of your car. Every inch of your car is painstakingly
+                  restored by our skilled specialists, from the outside gloss to the
+                  inside freshness. Watch as we clean every surface to revitalize it
+                  and bring back its shine. With our painstaking attention to
+                  detail, you can enhance your driving experience and make sure your
+                  car shines brilliantly on every trip.
+                </p>
+                <div class="Pricing-Button-container">
+                  <a href="SedanPackages.html" class="Pricing-btn">See More</a>
+                </div>
+              </div>
+            </div>
+            <div class="Image-Card1">
+              <img src="Images/Image-Card2.jpg" />
+              <div class="Card-Content">
+                <h2 class="Card-title">Trucks</h2>
+                <p class="Card-description">
+                  Utilize our top-notch truck detailing services to bring out your
+                  truck's natural raw beauty. Our knowledgeable experts are experts
+                  at restoring your truck's sturdy exterior and roomy interior. Feel
+                  a revitalization as we remove grime, improve longevity, and
+                  revitalize the look of your car. Allow us to enhance the
+                  visibility of your truck both on and off the road, making sure it
+                  sticks out with impressive strength and immaculate condition.
+                </p>
+                <div class="Pricing-Button-container">
+                  <a href="TruckPackages.html" class="Pricing-btn">See More</a>
+                </div>
+              </div>
+            </div>
+            </section>
+      </div>        
+      <footer>
+        <div id="footer-header">
+          <h1>Company</h1>
+          <h1>Socials</h1>
+        </div>
+        <div id="listContainer">
+          <ul id="listlinks">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="ComparePackages.html">Packages</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+          </ul>
+          <ul id="listsocials">
+            <li><a href="https://www.facebook.com/"><img src="Images/icons8-facebook-48.png"></a></li>
+            <li><a href="https://www.facebook.com/"><img src="Images/icons8-facebook-48.png"></a></li>
+          </ul>
+        </div>
+      </footer>
+            <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+    // Ensure the sidebar remains hidden
+    document.querySelector('.sidebar').style.display = 'none';
+});
+
+function showSidebar() {
+          const sidebar = document.querySelector(".sidebar");
+          sidebar.style.display = "flex";
+        }
+  
+        function hideSidebar() {
+          const sidebar = document.querySelector(".sidebar");
+          sidebar.style.display = "none";
+        }
+
+            </script>
+</body>
+</html>

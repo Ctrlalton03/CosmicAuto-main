@@ -1,0 +1,1942 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation: slideIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@font-face {
+    font-family: "Oswald-Light";
+    src: url(Fonts/Oswald-Light.ttf);
+}
+
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url(Fonts/Oswald-Bold.ttf);
+}
+
+
+@font-face {
+    font-family: "Futura-Light";
+    src: url(Fonts/Futura\ Light.otf);
+}
+
+
+@font-face {
+    font-family: "Oswald-SemiBold";
+    src: url(Fonts/Oswald-SemiBold.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+    .Home-Page{
+        width: 100%;
+        height: 100vh;
+        transform: translateY(20px);
+        opacity: 0;
+        animation: slideIn 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+       
+    }
+    
+    .Home-Page{
+        width: 100%;
+        height: 100vh;
+        transform: translateY(20px);
+        opacity: 0;
+        animation: slideIn 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+       overflow: hidden;
+    }
+
+    nav{
+        background-color: white;
+        }
+      
+      nav ul{
+          width: 100%;
+          list-style: none;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+      }
+      
+      nav li{
+          height: 60px;
+      
+      }
+      
+      nav a{
+          height: 100%;
+          padding: 0 30px;
+          display: flex;
+          text-decoration: none;
+          align-items: center;
+          color: #5F43B2;
+      }
+      
+      nav a:hover{
+          transform: scale(1.1);
+          transition: .5s ease-out;
+      }
+      
+      nav li:first-child{
+          margin-right: auto;
+      }
+      .sidebar{
+          transform: none;
+          transition: none;
+          position: fixed;
+          top: 0;
+          right: 0;
+          
+          height: 100vh;
+          width: 250px;
+          z-index: 999;
+          background-color: white;
+          box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          
+      }   
+      
+      .sidebar li{
+          width: 100%;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 20px 0;
+      }
+      
+      .sidebar a{
+          width: 100%;
+          color: #5F43B2;
+          text-decoration: none;
+          font-size: 20px;
+          font-family: "Oswald-Light";
+      }
+      
+      .menu-button{
+        display: none;
+      }
+    
+    
+    .MainPage-Content{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-self:space-between;
+        overflow: hidden;
+    }
+    
+    
+    .Left-side-Picture-bg{
+        max-width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        overflow: hidden;
+        z-index: -1;
+    
+    }
+    
+    
+    
+    .right-side-Content{
+        display: flex;
+        justify-content:center;
+        text-align:center;
+        flex-wrap: wrap;
+        padding: 20px;
+        width: 40%;
+      
+    }
+    
+    .Right-Side-Content-header{
+    
+        width: 100%;
+    
+    }
+    
+    .Right-Side-Content-header h2{
+    
+        font-family: "Oswald-Light";
+        font-weight: 300;
+        font-size:122px;
+        color: #5F43B2;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    
+    .Right-Side-Content-header h1{
+    
+        font-family: "Oswald-Bold";
+        font-weight: bold;
+        color: #363636;
+        font-size:122px;
+    }
+    
+    
+    
+    #Right-side-content-text{
+        height: 300px;
+        color: #5F43B2;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: center;
+        align-items:center;
+        font-family: "Futura-Light";
+        font-size: 25px;
+    
+    }
+    
+    .Action-Buttons{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 80px;
+    
+    }
+    
+    
+    .Action-Buttons a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #5F43B2;
+        height: 64px;
+        width: 285px;
+        text-decoration: none;
+        font-family: "Oswald-SemiBold";
+        font-size: 20px;
+        transition-duration: 0.5s;
+        
+    }
+    
+    
+    .Action-Buttons a:hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #ffffff;
+        background-color: #5F43B2;
+        color: white;
+        cursor: pointer;
+        box-shadow:6px 10px 45px 14px rgba(57, 18, 171, 0.39);;
+        height: 64px;
+        width: 285px;
+        text-decoration: none;
+        font-family: "Oswald-SemiBold";
+        transform: scale(1.15);
+        transition-duration: 0.5s;
+    }
+    
+    .Discount-SideSection{
+        width: 100% ;
+        height: 300px;
+        background: linear-gradient(99deg, rgba(95,67,178,1) 0%, rgba(48,34,89,1) 100%);
+        margin-top: -11px;
+        display: flex;
+        justify-content: space-around;
+        transform: translateY(20px);
+        opacity: 0;
+        animation: slideIn 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+    }
+    
+    .Discount-sidesectioncontent{
+    
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    
+    .Discount-sidesectioncontent h1{
+        color: white;
+        font-family: "Oswald-Bold";
+    
+    }
+    
+    .Discount-sidesectioncontent p{
+        font-family: "Futura-Light";
+        font-size: 19px;
+        color: white;
+    }
+    
+    
+    .Side-Section-images{
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        height:100%;
+        width: 1000px;
+    }
+    
+    .Side-Section-images img{
+        max-width: 100%;
+        height: 150px;
+        drop
+    }
+    
+    .About-Us-Section{
+        background-image: url(Images/About-Background.png);
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+        position: relative;
+        transform: translateY(20px);
+        opacity: 0;
+        animation: slideIn 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+        
+    }
+    
+    .About-Us-Section-Content{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 20px;
+        padding-top: 10px;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        background-image: linear-gradient(115deg,
+         rgba(0,0,0,1) 0%,
+         rgba(0, 0, 0, 0.935) 38%,
+         rgba(0,0,0,0) 100%)
+    }
+    
+    .About-Us-Section-Content h1{
+        font-family: "Oswald-Bold";
+        font-size: 112px;
+        padding-left: 20px;
+        color: #5F43B2;
+    }
+    
+    .About-Us-Section-Content p{
+        
+        padding-left: 20px;
+        font-family: "Futura-Light";
+        font-size: 1.5em;
+        color: white;
+        
+    }
+    
+    .About-Us-Section-Content a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #5F43B2;
+        height: 64px;
+        width: 285px;
+        text-decoration: none;
+        font-family: "Futura-Light";
+        font-size:30px;
+        color: white;
+        transition-duration: 0.5s;
+    }
+    
+    .About-Us-Section-Content  a:hover{
+        background-color: #5F43B2;
+        color: white;
+        transition-duration: 0.5s;
+        box-shadow:6px 10px 45px 14px rgba(57, 18, 171, 0.39);;
+    }
+    
+    #About_Us_Button{
+        padding-top: 20px;
+        padding-left: 20px;
+    
+    }
+    
+    #Pricing-Section{
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(20px);
+        opacity: 0;
+        animation: slideIn 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+    }
+    .Pricing-Header{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+       flex-direction: column;
+       padding: 20px;
+    }
+    
+    .Pricing-Header h1{
+        font-family: "Oswald-Bold";
+        font-size:91px;
+        color: #363636 ;
+        
+    }
+    
+    .Pricing-Header h3{
+        font-family: "Futura-Light";
+        color: #5F43B2;
+        padding-left: 7px;
+        font-size: 28px;
+    }
+    
+    
+    
+    .Image-Cards-Wrapper{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 60px;
+        
+    }
+    
+    .Image-Card1{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        transition-duration: 0.5s;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        width: 400px;
+        height: 600px;
+        border-radius: 20px;
+        padding: 10px;
+        align-items: flex-end;
+        box-shadow: 9px 15px 48px 0px rgba(0,0,0,1);
+    }
+    
+    .Image-Card1 img{
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    
+    .Image-Card1:hover{
+        transform:scale(1.05);
+        transform: translateY(-20px);
+        box-shadow:6px 10px 45px 14px rgba(57, 18, 171, 0.39);;
+    }
+    
+    .Image-Card1::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        z-index: 2;
+        transition: 0.5s all;
+        opacity: 0;
+    }
+    
+    .Image-Card1:hover:before{
+        opacity: 1;
+    }
+    
+    .Image-Card1 .Card-Content{
+        position: relative;
+        z-index: 3;
+        color: white;
+        opacity: 0;
+        transform: translateY(40px);
+        transition: 0.5s all;
+    }
+    
+    .Image-Card1:hover .Card-Content{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+    
+    .Image-Card1 .Card-Content h2{
+        font-family: "Oswald-Bold";
+        color: #5F43B2;
+        font-size: 36px;
+        opacity: 1;
+    }
+    
+    .Card-Content{
+        height: 50%;
+        width: 100%;
+        z-index: 1;
+        padding: 10px;
+    }
+    .Card-title {
+        position: relative;
+        width: fit-content;
+    }
+    
+    .Card-description{
+        font-family: "futura-Light";
+        font-size: 15px;
+        width: 100%;
+    }
+    
+    .Pricing-btn{
+        border: 2px solid #5F43B2;
+        padding: 5px;
+        text-decoration: none;
+        font-family: "Oswald-SemiBold";
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        text-align: right;
+       
+    }
+    
+    .Pricing-btn:hover{
+        box-shadow:6px 10px 45px 14px rgba(57, 18, 171, 0.39);
+        transition: .7s ease-in;
+        background-color: #5F43B2;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .Pricing-Button-container{
+        width: 80px;
+        float: right;
+    }
+    
+    
+    .Contact-Form-Section{
+        height: 60vh;
+        width: 100%;
+       display: flex;
+       justify-content:center;
+       transform: translateY(20px);
+        opacity: 0;
+        animation: slideIn 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+    }
+    
+    .Contact-Form-Container{
+        width: 100%;
+        height: 70vh;
+        background: linear-gradient(99deg, rgba(95,67,178,1) 0%, rgba(48,34,89,1) 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        
+    }
+    .Contact-Form-Container h1{
+        font-family: "Oswald-Bold";
+        color: white;
+        font-size: 50px;
+        padding: 10px;
+    }
+    .Contact-Form{
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items:center;
+        background-color: #ffffff;
+        width: 40%;
+        height: 60vh;
+        border-radius:7px;
+        box-shadow:6px 10px 45px 14px rgba(0, 0, 0, 0.39);;
+        padding: 20px;
+        
+    }
+    
+    .Contact-Form input{
+        width: 180px;
+        color: black;
+        font-family: "Futura-Light";
+        display: flex;
+        flex-direction: column;
+        place-content: space-between;
+        padding: 5px;
+ 
+    }
+    
+    .Contact-Form textarea{
+        width: 60%;
+        height:25vh;
+        border: 2px solid #000000;
+    }
+    .Input-Container{
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .form-group{
+        
+        width: 100%;
+        
+    }
+    
+    .Contact-Form button{
+        font-family: "Oswald-SemiBold";
+        width: 100px;
+        height: fit-content;
+        border-radius: 15px;
+        font-size: 20px;
+        color: #5F43B2;
+        border: 2px solid #5F43B2;
+        background-color: transparent;
+    }
+
+    .Contact-Form button:hover{
+        font-family: "Oswald-SemiBold";
+        width: 100px;
+        height: fit-content;
+        border-radius: 15px;
+        font-size: 20px;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        background-color: #5F43B2;
+        transition: .7s ease-in;
+        cursor: pointer;
+    }
+    .Contact-Form input{
+        border: 2px solid #000000;
+        margin: 7px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #message{
+        width: 100%;
+        height: 150px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        font-family: "futura-Light";
+        padding: 5px;
+    
+    }
+
+
+    @media(max-width: 1500px){
+
+
+        /*Main Page*/
+        .Home-Page{
+            width: 100%;
+            height: 100vh;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideIn 1s ease-in-out forwards;
+            animation-delay: 0.5s;
+           overflow: hidden;
+        }
+
+        nav{
+            background-color: white;
+            }
+          
+          nav ul{
+              width: 100%;
+              list-style: none;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+          }
+          
+          nav li{
+              height: 60px;
+          
+          }
+          
+          nav a{
+              height: 100%;
+              padding: 0 30px;
+              display: flex;
+              text-decoration: none;
+              align-items: center;
+              color: #5F43B2;
+          }
+          
+          nav a:hover{
+              transform: scale(1.1);
+              transition: .5s ease-out;
+          }
+          
+          nav li:first-child{
+              margin-right: auto;
+          }
+          .sidebar{
+              transform: none;
+              transition: none;
+              position: fixed;
+              top: 0;
+              right: 0;
+              
+              height: 100vh;
+              width: 250px;
+              z-index: 999;
+              background-color: white;
+              box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              
+          }   
+          
+          .sidebar li{
+              width: 100%;
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 20px 0;
+          }
+          
+          .sidebar a{
+              width: 100%;
+              color: #5F43B2;
+              text-decoration: none;
+              font-size: 20px;
+              font-family: "Oswald-Light";
+          }
+
+            .menu-button{
+                display: none;
+            }
+
+            .MainPage-Content{
+                
+            }
+
+            .right-side-Content{
+                display: flex;
+                justify-content:center;
+                text-align:center;
+                flex-wrap: wrap;
+                
+                height: 100vh;
+                width: 50%;
+                
+            }
+            
+            .Right-Side-Content-header{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 25vh;
+                
+            }
+
+            .Right-Side-Content-header h2{
+                padding: 0;
+                font-size: 40px ;
+            }
+
+            .Right-Side-Content-header h1{
+                font-size: 60px;
+            }   
+
+
+            #Right-side-content-text{
+                height: 30%;
+                font-size: 16px;
+               
+            }
+
+            .Action-Buttons{
+                width: 100%;
+                height: 20vh;
+               
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /*pricing-packages*/
+
+            #Pricing-Section{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 100%;
+            
+            }
+
+
+            /*discount section*/
+            .Discount-sidesectioncontent br{
+                display: none;}
+
+           
+
+
+
+
+
+
+
+         /*contact form*/
+
+         .Contact-Form-Section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: ;
+         }
+         .Contact-Form-Container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+           
+        }
+
+        .Contact-Form{
+            width: 60%;
+            height: fit-content;
+            padding: 20px;
+          
+        }
+
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 5px;
+            
+        }
+
+        .form-group input{
+            width: 100%;
+            height: 50%;
+        }
+
+        #message{
+            width: 100%;
+            height: 150px;
+            margin-left: 5px;
+            margin-bottom: 10px;
+            font-family: "futura-Light";
+            padding: 5px;
+        
+        }
+    }
+    
+
+
+
+    @media(max-width: 1100px){
+
+
+
+        .Home-Page{
+            width: 100%;
+            height: 100vh;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideIn 1s ease-in-out forwards;
+            animation-delay: 0.5s;
+           overflow: hidden;
+        }
+
+        nav{
+            background-color: white;
+            }
+          
+          nav ul{
+              width: 100%;
+              list-style: none;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+          }
+          
+          nav li{
+              height: 60px;
+          
+          }
+          
+          nav a{
+              height: 100%;
+              padding: 0 30px;
+              display: flex;
+              text-decoration: none;
+              align-items: center;
+              color: #5F43B2;
+          }
+          
+          nav a:hover{
+              transform: scale(1.1);
+              transition: .5s ease-out;
+          }
+          
+          nav li:first-child{
+              margin-right: auto;
+          }
+          .sidebar{
+              transform: none;
+              transition: none;
+              position: fixed;
+              top: 0;
+              right: 0;
+              
+              height: 100vh;
+              width: 250px;
+              z-index: 999;
+              background-color: white;
+              box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              
+          }   
+          
+          .sidebar li{
+              width: 100%;
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 20px 0;
+          }
+          
+          .sidebar a{
+              width: 100%;
+              color: #5F43B2;
+              text-decoration: none;
+              font-size: 20px;
+              font-family: "Oswald-Light";
+          }
+          
+          .menu-button{
+            display: none;
+          }
+
+
+          .MainPage-Content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-self:space-between;
+            overflow: hidden;
+           
+          }
+
+
+          .right-side-Content{
+            display: flex;
+            justify-content:center;
+            text-align:center;
+            flex-wrap: wrap;
+          
+            padding: 20px;
+            width: 50%;
+            
+          }
+
+            .Right-Side-Content-header{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 30vh;
+                padding: 80px;
+                
+            }
+
+          .Right-Side-Content-header h2{
+            
+            font-size: 60px ;
+          }
+
+          .Right-Side-Content-header h1{
+            font-size: 60px;
+          }
+
+
+          #Right-side-content-text{
+            
+            height: 30%;
+            font-size: 12px
+        
+          }
+
+            .Action-Buttons{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+               
+            }
+
+            .Action-Buttons a{
+                font-size: 20px;
+                border: 3px solid #5F43B2;
+                border-radius:5px ;
+                width: auto;
+            }
+
+        
+
+        /* Discount section*/
+        .Discount-SideSection{
+            width: 100% ;
+            overflow: hidden;
+            height: 60vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .Discount-sidesectioncontent{
+            display: flex;
+            flex-direction:column ;
+            text-align: left;
+            
+            overflow: hidden;
+            height:60%;
+            width: 80%;
+            padding: 20px;
+            
+        }
+
+        .Discount-sidesectioncontent h1{
+            color: white;
+            font-family: "Oswald-Bold";
+            font-size: 40px;
+            text-align: left;
+        }
+
+        .Discount-sidesectioncontent p{
+            font-family: "Futura-Light";
+            font-size: 20px;
+            color: white;
+            text-align: left;
+        }
+
+        .Discount-sidesectioncontent br{
+            display: none;}
+
+        .Side-Section-images{
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            height:40%;
+            width: 100%;
+            padding: 20px;
+            flex-wrap: wrap;
+           
+        }
+
+
+
+
+        /*contact form*/
+        .Contact-Form-Container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 50px;
+        }
+
+        .Contact-Form{
+            width: 60%;
+            padding: 10px;
+            
+        }
+
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 5px;
+            
+        }
+
+        .form-group input{
+            width: 100%;
+            height: 50%;
+        }
+
+        #message{
+            width: 100%;
+            height: 150px;
+            margin-left: 5px;
+            margin-bottom: 10px;
+            font-family: "futura-Light";
+            padding: 5px;
+        
+        }
+
+
+
+
+
+
+
+    }
+    
+    @media(max-width: 800px){
+
+        .Home-Page{
+            width: 100%;
+            height: 100vh;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideIn 1s ease-in-out forwards;
+            animation-delay: 0.5s;
+           overflow: hidden;
+        }
+        nav{
+            background-color: white;
+            }
+          
+          nav ul{
+              width: 100%;
+              list-style: none;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+          }
+          
+          nav li{
+              height: 60px;
+          
+          }
+          
+          nav a{
+              height: 100%;
+              padding: 0 30px;
+              display: flex;
+              text-decoration: none;
+              align-items: center;
+              color: #5F43B2;
+          }
+          
+          nav a:hover{
+              transform: scale(1.1);
+              transition: .5s ease-out;
+          }
+          
+          nav li:first-child{
+              margin-right: auto;
+          }
+          .sidebar{
+              transform: none;
+              transition: none;
+              position: fixed;
+              top: 0;
+              right: 0;
+              
+              height: 100vh;
+              width: 250px;
+              z-index: 999;
+              background-color: white;
+              box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              
+          }   
+          
+          .sidebar li{
+              width: 100%;
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 20px 0;
+          }
+          
+          .sidebar a{
+              width: 100%;
+              color: #5F43B2;
+              text-decoration: none;
+              font-size: 20px;
+              font-family: "Oswald-Light";
+          }
+          
+          
+          .menu-button{
+            display: none;
+          }
+          
+        .hideOnMobile{
+            display: none;
+        }
+        
+        .menu-button{
+          display:block ;
+        }
+        
+        
+        .sidebar{
+          display: hidden;
+        }
+        
+        
+        nav li{
+            height: 100px;
+            border: none;
+        }
+        
+
+
+        .Left-side-Picture-bg{
+            display: none;
+        }
+        
+
+        .right-side-Content{
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            padding: 20px;
+            text-align:center;
+            flex-wrap: wrap;
+        
+        
+    }   
+    
+
+.Right-Side-Content-header{
+    
+    height: 220px;
+}
+
+    .Right-Side-Content-header h2{
+        margin: 0px;
+        font-family: "Oswald-Light";
+        font-size: 60px;
+        color: #5F43B2;
+   
+    }
+
+    .Right-Side-Content-header h1{
+        font-family: "Oswald-Bold";
+        font-weight: bold;
+        color: #363636;
+        font-size: 60px;
+    }
+
+    #Right-side-content-text{
+        height: auto;
+        width: 250px;
+        color: #5F43B2;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: "Futura-Light";
+        font-size: 1.2em;
+        
+    }
+
+
+
+    .Action-Buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+        margin-bottom: 100px;
+    }
+
+    .Action-Buttons a{
+        font-family: "Oswald-SemiBold";
+        font-size: 20px;
+        border: 3px solid #5F43B2;
+        border-radius:5px ;
+        width: 70%;
+
+    }
+
+    /*discount section*/
+    .Discount-SideSection{
+        width: 100% ;
+        overflow: hidden;
+        margin-top: 10px;
+        height: 70vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Discount-sidesectioncontent{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height:50%;
+        width: 100%;
+        padding: 20px;
+        
+    }
+
+    .Discount-sidesectioncontent h1{
+        color: white;
+        font-family: "Oswald-Bold";
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .Discount-sidesectioncontent p{
+        font-family: "Futura-Light";
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .Discount-sidesectioncontent br{
+        display: none;}
+
+    .Side-Section-images{
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        height:40%;
+        width: 100%;
+   
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+
+/* About us*/
+    .About-Us-Section{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .About-Us-Section-Content{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .About-Us-Section-Content br{
+        display: none;
+    }
+
+
+
+
+    /* Pricing Section */
+
+    #Pricing-Section{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .Pricing-Header{
+        display: flex;
+        width: 100%;
+        
+    }
+
+    .Pricing-Header h1{
+        font-family: "Oswald-Bold";
+        font-size: 40px;
+        color: #363636 ;
+        
+    }
+
+
+    .Pricing-Header h3{
+        font-family: "Futura-Light";
+        color: #5F43B2;
+        font-size: 20px;
+    }
+
+    .Image-Cards-Wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        height: 60%;
+        
+    }
+
+    .Image-Card1{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex: 1 1 100px;
+        transition-duration: 0.5s;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        width: 350px;
+        height: 350px;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 20px;
+        box-shadow: 9px 15px 48px 0px rgba(0,0,0,1);
+    }
+
+    .Image-Card1:hover{
+        transform:scale(1);
+        transform: translateY(0px);
+        box-shadow:none;
+    }
+
+    .Card-Content{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        place-content: center;
+        padding: 10px;
+        justify-content: space-evenly;
+        text-align: left;
+        align-items: center;
+        
+    }
+
+    .Pricing-btn{
+        display: flex;
+        
+    }
+
+    .Card-Content h2{
+        font-family: "Oswald-Bold";
+        
+    }
+
+
+    .Card-description{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .Contact-Form-Section{
+        display: flex;
+        width: 100%;
+    }
+
+    .Contact-Form-Container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 50px;
+    }
+
+
+
+
+
+    .Contact-Form{
+        width: 100%;
+        padding: 50px;
+        
+    }
+
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .form-group input{
+        width: 100%;
+        height: 50%;
+    }
+
+
+    #message{
+        width: 100%;
+        height: 150px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        font-family: "futura-Light";
+        padding: 5px;
+    
+    }
+
+
+
+
+}
+
+@media(max-width: 600px){
+    .Home-Page{
+        
+        width: 100%;
+        height: 100vh;
+        transform: translateY(20px);
+        opacity: 0;
+        animation: slideIn 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+       overflow: hidden;
+    }
+
+    .Right-Side-Content-header{
+        height: 30%;
+
+        
+    }   
+
+    .Right-Side-Content-header h2{
+        font-size: 50px;
+    }
+
+    #Right-side-content-text{
+        height: 30%;
+        width: 80%;
+        font-size: 16px;
+    }
+
+
+
+    .Action-Buttons{
+      
+        height: 20%;
+        padding-top: 20px;
+        gap: 5px;
+    }
+
+    .Discount-SideSection{
+        height: 100vh;
+        padding: 10px;
+        padding-top: 40px;
+    }
+
+    .Side-Section-images{
+        display: flex;
+        flex-direction: row;
+        height: 30%;
+        width: 400px;
+        padding: 10px;
+    }
+
+
+
+
+    .Discount-sidesectioncontent{
+        overflow: hidden;
+        height: 550px;
+        padding: 10px;
+    }
+
+    .Discount-sidesectioncontent h1{
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .Discount-sidesectioncontent p{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+
+
+    /*Discount section*/
+
+    .Discount-SideSection{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        
+    }
+
+
+    .Discount-sidesectioncontent{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        overflow: hidden;
+        height: 60%;
+        width: 100%;
+       
+    }
+
+    .Discount-sidesectioncontent h1{
+        color: white;
+        font-family: "Oswald-Bold";
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .Discount-sidesectioncontent p{
+        font-family: "Futura-Light";
+        font-size: 16px;
+        color: white;
+        text-align: center;
+    }
+
+
+    .Side-Section-images{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 30%;
+        width: 100%;
+       
+    }
+
+    .Side-Section-images img{
+        width: 150px;
+        height: 150px;
+    }
+
+
+    /* About us*/
+    .About-Us-Section-Content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+       
+    }
+
+    .About-Us-Section-Content h1{
+        font-size: 60px;
+        padding-bottom: 20px;
+    }
+
+    .About-Us-Section-Content p{
+        font-size: 20px;
+    }
+
+
+
+    .About-Us-Section-Content a{
+        font-size: 20px;
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+
+
+    /* Pricing Section*/
+
+    #Pricing-Section{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        
+        gap: 10px;
+        
+    }
+
+    .Pricing-Header{
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-bottom: 20px;
+        text-align: center;
+        z-index: 1;
+      
+    }
+    .Pricing-Header h1{
+        font-size: 35px;
+    }
+
+    .Pricing-Header h3{
+        font-size: 20px;
+
+    }
+
+    .Image-Cards-Wrapper{
+            
+        display: flex;
+        flex: 1 1 50px;
+        transition-duration: 0.5s;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+        height: 150px;
+   
+        
+    }
+
+    .Image-Card1:hover{
+        transform:none;
+        transform:none;
+        box-shadow:none;}
+
+
+
+    .Image-Card1{
+
+        display: flex;
+        width: 200px;
+        height: 100px;
+        transition-duration: 0.5s;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        
+    }
+
+    .Pricing-Header h1{
+        font-size: 60px;
+    }
+
+
+    .Card-Content{
+        height: 75%;
+        width: 100%;
+        border: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .Card-Content h2{
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+ /* contact form*/
+    .Contact-Form-Container{
+    width: 100%;
+    
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    }
+
+    .Contact-Form{
+    width: 100%;
+    height: 70%;
+    }
+
+    .form-group{
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        left: 0px;
+    }
+
+    .Contact-Form label{
+    font-size: 20px;
+    font-family: "Oswald-Light";
+    }
+
+    .Contact-Form input{
+    width: 100%;
+    height: 50%;
+    }
+
+
+    
+
+    #message{
+    width: 100%;
+    height: 100px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-family: "futura-Light";
+    padding: 5px;
+    }
+}
+
+
+    @media(max-width: 400px){
+        .Action-Buttons{
+            
+            height: 20%;
+            padding-top: 20px;
+            gap: 5px;
+        }
+
+        .Right-Side-Content-header{
+            height: 30%;
+    
+        }
+        #Right-side-content-text{
+            height: 20%;
+            width: 80%;
+            font-size: 14px;
+            padding-bottom: 30px;
+            
+            
+        }
+        .Right-Side-Content-header h2{
+            font-size: 60px;
+        }
+    
+        .Discount-SideSection{
+            height: 100vh;
+            padding: 10px;
+            padding-top: 40px;
+        }
+
+        .Discount-sidesectioncontent{
+            overflow: hidden;
+            height: 70%;
+            padding: 10px;
+        }
+
+        .Discount-sidesectioncontent h1{
+            font-size: 25px;
+            padding: 10px;
+        }
+
+        .Discount-sidesectioncontent p{
+            font-size: 14px;
+            padding-top: 20px;
+        }
+    
+        .Side-Section-images{
+            display: flex;
+            flex-direction: column;
+            height: 30%;
+            width: 400px;
+            padding: 10px;
+        }
+
+        .Side-Section-images img{
+            width: 100px;
+            height: 100px;
+            
+        }
+        
+
+        .About-Us-Section-Content h1{
+            font-size: 60px;
+        }
+
+        .About-Us-Section-Content p{
+            font-size: 20px;
+        }
+
+        .About-Us-Section-Content a{
+            font-size: 25px;
+            width: auto;
+            height: auto;
+            padding: 20px;
+        }
+
+        .Image-Cards-Wrapper{
+            
+            display: flex;
+            flex: 1 1 50px;
+            transition-duration: 0.5s;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            width: 100%;
+            height: 150px;
+            
+        }
+    
+        .Pricing-Header h1{
+            font-size: 60px;
+        }
+
+
+
+        .Contact-Form-Container{
+            width: 100%;
+        }
+        
+
+        .Contact-Form{
+            width: 100%;
+            height: 100vh;
+            
+        }
+
+        #message{
+            width: 100%;
+            height: 100px;
+            font-family: "futura-Light";
+        }
+
+    }
